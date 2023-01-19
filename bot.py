@@ -18,7 +18,7 @@ async def on_ready():
     print("有問題請至 https://discord.gg/WDxmw5WjPY 詢問")
     print("==================================================")
     print(F"{bot.user}已連線")
-    activity=discord.Activity(type=discord.ActivityType.watching, name="一款好用的webhook發送器") 
+    activity=discord.Activity(type=discord.ActivityType.watching, name="一款好用的webhook發送器") #更改狀態
     await bot.change_presence(status=discord.Status.dnd,activity=activity)
 
 
@@ -34,4 +34,4 @@ async def webhooksend(ctx,url,username,*,msg):
 
 
 
-bot.run("TOKEN")
+bot.run("TOKEN")#放上token
